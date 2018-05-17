@@ -67,15 +67,15 @@ public class Client {
 			// Check for spaces between words and allow for a pause
 			if (character.equals(" ")) {
 				System.out.print(" ");
-				playSound(175, 0.0, 0);
+				playSound(750, 0.0, 0);
 
 			}
 			else if (charList[x] == '.') {
 				System.out.print(".");
-				playSound(100, 1.0, 750);
+				playSound(100, 1.0, 600);
 			} else {
 				System.out.print("-");
-				playSound(250, 1.0, 750);
+				playSound(250, 1.0, 600);
 			}
 
 		}
@@ -108,7 +108,7 @@ public class Client {
 				morseString += " ";
 			}
 			else if(charList[x] == ' ') {
-				morseString += "   ";
+				morseString += "  ";
 			}
 			
 		}
